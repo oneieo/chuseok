@@ -29,6 +29,9 @@
           <button @click="activeView = 'game'" class="nav-button">
             전통 풍습
           </button>
+          <button @click="activeView = 'story'" class="nav-button">
+            추석 이야기
+          </button>
         </div>
       </main>
 
@@ -39,7 +42,7 @@
         key="food"
       >
         <h2>추석의 대표 음식</h2>
-        <div class="card-grid" style="grid-template-columns: repeat(2, 1fr)">
+        <div class="card-grid" style="grid-template-columns: repeat(3, 1fr)">
           <!-- 송편 카드 -->
           <div class="info-card">
             <img
@@ -66,6 +69,20 @@
             <p>
               동그랑땡, 산적, 동태전, 고추전 등 기름에 지진 전은 명절의
               '풍요로움'을 상징합니다.
+            </p>
+          </div>
+          <div class="info-card">
+            <img
+              src="/Gemini_Generated_Image_갈비찜.png"
+              alt="갈비찜 이미지"
+              class="card-img"
+              @error="onImgError"
+            />
+            <h3>갈비찜</h3>
+            <p>
+              갈비찜은 조선시대 궁중 수라상에도 올랐던 고급 요리입니다. 이처럼
+              귀한 음식을 명절에 먹는다는 것은, 한 해의 수확에 감사하고 기쁨을
+              나누는 의미입니다.
             </p>
           </div>
         </div>
@@ -129,6 +146,70 @@
           돌아가기
         </button>
       </section>
+
+      <!-- 4. 추석 이야기 뷰 -->
+      <section
+        class="content-section"
+        v-else-if="activeView === 'story'"
+        key="story"
+      >
+        <h2>추석 이야기</h2>
+        <div class="card-grid" style="grid-template-columns: repeat(3, 1fr)">
+          <!-- 달토끼 카드 -->
+          <div class="info-card">
+            <img
+              src="/Gemini_Generated_Image_달토끼.png"
+              alt="달토끼 이미지"
+              class="card-img"
+              @error="onImgError"
+            />
+            <h3>달토끼 이야기</h3>
+            <p>
+              추석의 상징인 보름달을 보며 누구나 한 번쯤 들어봤을 이야기입니다.
+              달에 토끼가 절구로 떡(혹은 불로장생의 약)을 찧고 있다는 상상이죠.
+              이는 불교 설화에서 유래된 이야기로, 자신을 희생해 노인을 도운
+              토끼가 그 공로로 옥황상제에 의해 달에 살게 되었다는 내용을 담고
+              있습니다.
+            </p>
+          </div>
+          <!-- 속담 1 카드 -->
+          <div class="info-card">
+            <img
+              src="/Gemini_Generated_Image_더말덜말.png"
+              alt="속담 1 이미지"
+              class="card-img"
+              @error="onImgError"
+            />
+            <h3>"더도 말고 덜도 말고 한가위만 같아라"</h3>
+            <p>
+              추석에 관한 가장 유명하고 상징적인 속담입니다. 덥지도 춥지도 않은
+              완벽한 날씨, 햇곡식과 햇과일이 가득한 풍요로움, 오랜만에 만난 가족
+              친지와의 즐거움까지, 일 년 중 가장 행복한 이 날처럼만 일 년 내내
+              살고 싶다는 소망이 담겨 있습니다.
+            </p>
+          </div>
+          <!-- 속담 2 카드 -->
+          <div class="info-card">
+            <img
+              src="/Gemini_Generated_Image_오농팔신.png"
+              alt="속담 2 이미지"
+              class="card-img"
+              @error="onImgError"
+            />
+            <h3>"오월 농부 팔월 신선" (五月農夫 八月神仙)</h3>
+            <p>
+              이 속담은 추석이 '수확의 계절'임을 명확하게 보여줍니다. 음력
+              5월에는 씨 뿌리고 밭을 가꾸느라 농부가 가장 바쁘고 힘들지만, 음력
+              8월 한가위가 되면 풍성하게 거둔 곡식을 보며 신선처럼 여유롭고
+              즐겁게 지낸다는 의미입니다. 노력의 결실과 풍요로운 휴식을 잘
+              표현한 말입니다.
+            </p>
+          </div>
+        </div>
+        <button @click="activeView = 'main'" class="back-button">
+          돌아가기
+        </button>
+      </section>
     </Transition>
 
     <footer class="footer">
@@ -141,7 +222,7 @@
 import { ref } from "vue";
 
 // 현재 보여줄 뷰를 관리하는 상태 ('main', 'food', 'game')
-const activeView = ref<"main" | "food" | "game">("main");
+const activeView = ref<"main" | "food" | "game" | "story">("main");
 
 // 한가위 인사말 (초기 메시지)
 const greetingMessage = ref<string>(
@@ -235,7 +316,7 @@ const onImgError = (event: Event) => {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 900px; /* 컨텐츠 최대 너비 제한 */
+  max-width: 1000px; /* 컨텐츠 최대 너비 제한 */
   margin: 5rem 0;
 }
 
