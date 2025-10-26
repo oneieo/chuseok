@@ -1,8 +1,10 @@
-# Vue 3 + TypeScript + Vite !
+# 🌕 한가위 맞이 인터랙티브 웹사이트
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Vite + Vue 3 + TypeScript를 기반으로 제작된 감성적인 한가위 맞이 웹페이지
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+이 프로젝트는 사용자와의 인터랙션을 통해 한가위의 다양한 정보(음식, 풍습, 이야기)를 탐색하고, 소원을 빌어보는 간단한 경험을 제공합니다. 모든 로직은 단일 파일 컴포넌트(App.vue) 내에서 구현되었습니다.
+
+---
 
 ## 프롬포트 질문들
 
