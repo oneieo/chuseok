@@ -2,7 +2,7 @@
   <div class="chuseok-container">
     <header class="header">
       <h1>풍요로운 한가위</h1>
-      <h2>소원 비는 보름달</h2>
+      <!-- <h2>소원 비는 보름달</h2> -->
     </header>
 
     <!-- 
@@ -48,7 +48,7 @@
               class="card-img"
               @error="onImgError"
             />
-            <h3>송편 (Songpyeon)</h3>
+            <h3>송편</h3>
             <p>
               그 해 수확한 햅쌀로 빚어 조상께 감사하는 마음을 담은, 한가위의
               상징적인 떡입니다.
@@ -62,10 +62,10 @@
               class="card-img"
               @error="onImgError"
             />
-            <h3>각종 전 (Jeon)</h3>
+            <h3>모둠전</h3>
             <p>
-              동그랑땡, 꼬치전, 동태전 등 기름에 지진 전은 명절의 '풍요로움'을
-              상징합니다.
+              동그랑땡, 산적, 동태전, 고추전 등 기름에 지진 전은 명절의
+              '풍요로움'을 상징합니다.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@
               class="card-img"
               @error="onImgError"
             />
-            <h3>차례 (Charye)</h3>
+            <h3>차례</h3>
             <p>
               햇곡식과 햇과일로 정성껏 상을 차려 조상께 감사를 전하는 중요한
               의식입니다.
@@ -236,7 +236,7 @@ const onImgError = (event: Event) => {
   align-items: center;
   width: 100%;
   max-width: 900px; /* 컨텐츠 최대 너비 제한 */
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 /* --- 트랜지션(Fade) 효과 --- */
@@ -280,7 +280,7 @@ const onImgError = (event: Event) => {
 .greeting {
   font-size: 1.25rem;
   line-height: 1.8;
-  margin-top: 3rem;
+  margin-top: 5rem;
   max-width: 600px;
   white-space: pre-line; /* \n 줄바꿈 적용 */
   transition: opacity 0.3s ease-in-out;
