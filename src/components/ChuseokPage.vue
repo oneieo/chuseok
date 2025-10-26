@@ -43,7 +43,7 @@
           <!-- 송편 카드 -->
           <div class="info-card">
             <img
-              src="https://placehold.co/400x300/5a5a7d/f0e6d2?text=송편"
+              src="/Gemini_Generated_Image_송편.png"
               alt="송편 이미지"
               class="card-img"
               @error="onImgError"
@@ -57,7 +57,7 @@
           <!-- 전 카드 -->
           <div class="info-card">
             <img
-              src="https://placehold.co/400x300/5a5a7d/f0e6d2?text=각종+전"
+              src="/Gemini_Generated_Image_전.png"
               alt="각종 전 이미지"
               class="card-img"
               @error="onImgError"
@@ -85,7 +85,7 @@
           <!-- 강강술래 카드 -->
           <div class="info-card">
             <img
-              src="https://placehold.co/400x300/5a5a7d/f0e6d2?text=강강술래"
+              src="/Gemini_Generated_Image_강강술래.png"
               alt="강강술래 이미지"
               class="card-img"
               @error="onImgError"
@@ -99,7 +99,7 @@
           <!-- 윷놀이 카드 -->
           <div class="info-card">
             <img
-              src="https://placehold.co/400x300/5a5a7d/f0e6d2?text=윷놀이"
+              src="/Gemini_Generated_Image_윷놀이.png"
               alt="윷놀이 이미지"
               class="card-img"
               @error="onImgError"
@@ -113,7 +113,7 @@
           <!-- 차례 카드 -->
           <div class="info-card">
             <img
-              src="https://placehold.co/400x300/5a5a7d/f0e6d2?text=차례"
+              src="/Gemini_Generated_Image_차례상.png"
               alt="차례 이미지"
               class="card-img"
               @error="onImgError"
